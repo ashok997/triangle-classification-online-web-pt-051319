@@ -15,7 +15,8 @@ class Triangle
     
     if side_a==side_b && side_b==side_c
       :equilateral
-    elseif 
+    elsif side_a==side_b || side_b==side_c ||side_a==
+      :isosceles
     end
     
   end
