@@ -13,6 +13,8 @@ class Triangle
   def illegal?
     if side_a==0||side_b==0||side_c==0
       true
+    elsif side_a<0 || side_b<0||side_c<0
+      true
     end
   end
    
