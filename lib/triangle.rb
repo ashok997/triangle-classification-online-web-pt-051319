@@ -11,19 +11,15 @@ class Triangle
   end
   
  
- 
-  
-  def kind
-
     if side_a==side_b && side_b==side_c
-      :equilateral
+      self.kind :equilateral
     elsif side_a==side_b || side_b==side_c ||side_a==side_c
-      :isosceles
+      self.kind :isosceles
     else
-      :scalene
+      self.kind :scalene
     end
     
-  end
+
   
  
   class TriangleError < StandardError
