@@ -10,7 +10,7 @@ class Triangle
     @side_c = side_c
   end
   
- 
+  def illegal?
     if side_a==0||side_b==0||side_c==0
       raise TriangleError
     elsif side_a<0 ||side_b<0||side_c<0
@@ -18,11 +18,13 @@ class Triangle
     elsif side_a+side_b<side_b||side_b+side_c<side_a
       raise TriangleError
     else
-      self.kind
+      false
     end
+  end
    
   
   def kind
+    if illegal?==false
 
     if side_a==side_b && side_b==side_c
       :equilateral
