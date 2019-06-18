@@ -25,15 +25,16 @@ class Triangle
   
   def kind
     if illegal?==false
-      beign raise TriangleError
+      begin raise TriangleError
         puts error.message
-
-    if side_a==side_b && side_b==side_c
-      :equilateral
-    elsif side_a==side_b || side_b==side_c ||side_a==side_c
-      :isosceles
-    else
-      :scalene
+        end
+      if side_a==side_b && side_b==side_c
+        :equilateral
+      elsif side_a==side_b || side_b==side_c ||side_a==side_c
+        :isosceles
+      else
+        :scalene
+      end
     end
     
   end
