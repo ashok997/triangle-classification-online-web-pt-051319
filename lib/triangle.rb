@@ -25,6 +25,7 @@ class Triangle
   
   def kind
     if illegal?==false
+      beign 
 
     if side_a==side_b && side_b==side_c
       :equilateral
