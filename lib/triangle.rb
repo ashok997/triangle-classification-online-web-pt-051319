@@ -24,6 +24,7 @@ class Triangle
    
   
   def kind
+    while illegal?==false
 
     if side_a==side_b && side_b==side_c
       :equilateral
