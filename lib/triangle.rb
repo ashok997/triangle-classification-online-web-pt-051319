@@ -25,7 +25,7 @@ class Triangle
   
   def kind
     binding.pry
-    if self.illegal?==true
+    if illegal?==true
       begin raise TriangleError
        puts error.message
       end
