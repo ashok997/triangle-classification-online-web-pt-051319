@@ -24,7 +24,7 @@ class Triangle
    
   
   def kind
-    if illegal?==false
+    if self.illegal?==false
       begin raise TriangleError
         puts error.message
         end
