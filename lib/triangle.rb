@@ -24,19 +24,19 @@ class Triangle
    
   
   def kind
-    binding.pry
-    if self.illegal?==false
-      begin raise TriangleError
-        puts error.message
-        end
-      elsif side_a==side_b && side_b==side_c
-        :equilateral
-      elsif side_a==side_b || side_b==side_c ||side_a==side_c
-        :isosceles
-      else
-        :scalene
-      end
-    end
+    # binding.pry
+    # if self.illegal?==false
+    #   begin raise TriangleError
+    #     puts error.message
+    #     end
+    #   elsif side_a==side_b && side_b==side_c
+    #     :equilateral
+    #   elsif side_a==side_b || side_b==side_c ||side_a==side_c
+    #     :isosceles
+    #   else
+    #     :scalene
+    #   end
+    # end
     
   end
   
