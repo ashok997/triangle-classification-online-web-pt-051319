@@ -10,8 +10,8 @@ class Triangle
     @side_c = side_c
   end
   
-  def not_valid
-    if side_a==side_b ==side_c==0
+  def illegal?
+    if side_a==side_b==side_c==0
       return false
     elsif side_a<0 ||side_b<0 ||side_c<0
       return false
