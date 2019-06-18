@@ -15,7 +15,8 @@ class Triangle
       return false
     elsif side_a<0 ||side_b<0 ||side_c<0
       return false
-    elsif side_a 
+    elsif side_a+side_b < side_c || side_b+side_c < side_a
+      return false
   end
   
   def kind
