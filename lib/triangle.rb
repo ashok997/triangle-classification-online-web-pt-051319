@@ -15,6 +15,7 @@ class Triangle
     
     if side_a==side_b && side_b==side_c
       :equilateral
+    elseif 
     end
     
   end
