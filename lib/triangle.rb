@@ -12,10 +12,11 @@ class Triangle
   
   
   def kind
-    binding.pry
+    
     if side_a==side_b && side_b==side_c
-      puts"equilateral"
+      "equilateral"
     end
+    
   end
   
 end
