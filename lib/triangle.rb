@@ -26,7 +26,7 @@ class Triangle
   def kind
     if illegal?==false
       beign raise TriangleError
-        
+        puts error.message
 
     if side_a==side_b && side_b==side_c
       :equilateral
