@@ -31,10 +31,10 @@ class Triangle
       end
     elsif side_a==side_b && side_b==side_c
        :equilateral
-    #   elsif side_a==side_b || side_b==side_c ||side_a==side_c
-    #     :isosceles
-    #   else
-    #     :scalene
+     elsif side_a==side_b || side_b==side_c ||side_a==side_c
+         :isosceles
+     else
+      :scalene
     #end
     end
     
