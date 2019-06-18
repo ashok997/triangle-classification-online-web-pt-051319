@@ -15,9 +15,10 @@ class Triangle
     if side_a==side_b && side_b==side_c
       ":equilateral"
   end
-  
-  class TriangleError < StandardError
+end
+ 
+class TriangleError < StandardError
     
-  end
+
     
 end
