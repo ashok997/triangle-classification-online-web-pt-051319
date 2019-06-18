@@ -12,10 +12,12 @@ class Triangle
   
   def illegal?
     if side_a==side_b==side_c==0
-      return false
+      true
     elsif side_a<0 ||side_b<0 ||side_c<0
-      return false
+      true
     elsif side_a+side_b < side_c || side_b+side_c < side_a
+      true
+    end
   end
   
   def kind
