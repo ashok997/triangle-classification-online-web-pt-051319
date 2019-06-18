@@ -19,6 +19,7 @@ class Triangle
       raise TriangleError
     else
       self.kind
+    end
    
   
   def kind
