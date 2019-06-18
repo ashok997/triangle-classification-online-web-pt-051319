@@ -15,7 +15,7 @@ class Triangle
       true
     elsif side_a<0 ||side_b<0||side_c<0
       true
-    elsif side_a+side_b<side_b||side_b+side_c<side_a
+    elsif side_a+side_b<side_b||side_b+side_c<side_a||side_c+side_a<side
      true
     else
       false
