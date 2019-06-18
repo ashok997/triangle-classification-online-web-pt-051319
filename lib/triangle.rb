@@ -17,8 +17,6 @@ class Triangle
       return false
     elsif side_a+side_b < side_c || side_b+side_c < side_a
       return false
-    else 
-      true
     end
   end
   
