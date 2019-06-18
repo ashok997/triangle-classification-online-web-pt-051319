@@ -6,8 +6,8 @@ class Triangle
   
   def kind
     if side_a==side_b && side_b==side_c
-      
-  end
+      "
+  end"
   
   class TriangleError < StandardError
     
