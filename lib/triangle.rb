@@ -1,4 +1,4 @@
-
+require 'pry'
 
 class Triangle
   # write code here
@@ -12,6 +12,7 @@ class Triangle
   
   
   def kind
+    binding.pry
     if side_a==side_b && side_b==side_c
       ":equilateral"
     end
