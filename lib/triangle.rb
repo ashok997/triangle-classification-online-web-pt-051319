@@ -12,11 +12,11 @@ class Triangle
   
   def illegal?
     if side_a==0||side_b==0||side_c==0
-      raise TriangleError
+      true
     elsif side_a<0 ||side_b<0||side_c<0
-      raise TriangleError
+      true
     elsif side_a+side_b<side_b||side_b+side_c<side_a
-      raise TriangleError
+     true
     else
       false
     end
@@ -25,18 +25,18 @@ class Triangle
   
   def kind
     binding.pry
-    # if self.illegal?==false
-    #   begin raise TriangleError
-    #     puts error.message
-    #     end
-    #   elsif side_a==side_b && side_b==side_c
-    #     :equilateral
+    if self.illegal?==true
+      begin raise TriangleError
+       puts error.message
+      end
+    elsif side_a==side_b && side_b==side_c
+       :equilateral
     #   elsif side_a==side_b || side_b==side_c ||side_a==side_c
     #     :isosceles
     #   else
     #     :scalene
-    #   end
-    # end
+    end
+    end
     
   end
   
